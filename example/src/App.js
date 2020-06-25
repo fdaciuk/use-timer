@@ -1,10 +1,42 @@
-import React from 'react'
+import React, { useCallback, useEffect } from 'react'
+import useTimer from '@fdaciuk/use-timer'
 
-import { ExampleComponent } from '@fdaciuk/use-timer'
-import '@fdaciuk/use-timer/dist/index.css'
+function App () {
+  const {
+    minutes,
+    seconds,
+    start,
+    pause,
+    finished,
+    reset,
+    setTimer
+  } = useTimer('05:00')
 
-const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  const handleSubmit = useCallback((e) => {
+    e.preventDefault()
+    setTimer(e.target.elements.time.value)
+  }, [setTimer])
+
+  useEffect(() => {
+    finished(() => {
+      console.log('acabou!')
+    })
+  }, [finished])
+
+  return (
+    <>
+      <h1>{minutes}:{seconds}</h1>
+      <button onClick={start}>Start!</button>
+      <button onClick={pause}>Pause</button>
+      <button onClick={reset}>Reset timer</button>
+
+      <form onSubmit={handleSubmit}>
+        <input type='text' name='time' />
+        <button type='submit'>Set new timer</button>
+      </form>
+
+    </>
+  )
 }
 
 export default App
