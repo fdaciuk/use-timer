@@ -1,7 +1,7 @@
 {
   "name": "@fdaciuk/use-timer",
-  "version": "1.0.0",
-  "description": "React Hook to easily create decrement timers",
+  "version": "0.1.0",
+  "description": "React Hook to easily create decremental timers",
   "author": "fdaciuk",
   "license": "MIT",
   "repository": "fdaciuk/use-timer",
@@ -9,7 +9,7 @@
   "module": "dist/index.modern.js",
   "source": "src/index.js",
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
