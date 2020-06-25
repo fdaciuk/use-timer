@@ -14,7 +14,6 @@ If you are using yarn:
 
 ```bash
 yarn add @fdaciuk/use-timer
-
 ```
 
 ## Usage
