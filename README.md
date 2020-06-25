@@ -86,7 +86,7 @@ function Example () {
 - **`seconds`** (`String`): show left seconds in 2 or more digits
 - **`start`** (`Function`): function that should be executed when the timer is supposed to start counting
 - **`pause`** (`Function`): function to pause timer,
-- **`finished`** (`Function`): function that receives another functions that will be executed when timer finish counting
+- **`finished`** (`Function`): function that receives another function that will be executed when timer finishes counting
 - **`reset`** (`Function`): function to reset counter to it's initial time, passed to `useTimer` hook
 - **`setTimer`** (`Function`): function to set a new timer
 
