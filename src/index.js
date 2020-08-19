@@ -48,8 +48,8 @@ function useTimer (stringTime) {
     const [minutes, seconds] = stringTime.split(':')
 
     setTime({
-      minutes: twoChars(minutes || 0),
-      seconds: twoChars(seconds || 0),
+      minutes: twoChars(+minutes || 0),
+      seconds: twoChars(+seconds || 0),
     })
   }, [twoChars])
 
