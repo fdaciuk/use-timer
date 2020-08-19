@@ -1,6 +1,6 @@
 {
   "name": "@fdaciuk/use-timer",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "React Hook to easily create decremental timers",
   "author": "fdaciuk",
   "license": "MIT",
