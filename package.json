@@ -8,12 +8,12 @@
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
-  "types": "src/types.d.ts",
+  "types": "dist/types.d.ts",
   "engines": {
     "node": ">=12"
   },
   "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "build": "microbundle-crl --no-compress --format modern,cjs && copyfiles -f src/types.d.ts dist",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prepare": "run-s build",
     "test": "run-s test:unit test:lint test:build",
@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "babel-eslint": "10.1.0",
+    "copyfiles": "2.3.0",
     "cross-env": "7.0.2",
     "eslint": "7.7.0",
     "eslint-config-prettier": "6.11.0",
