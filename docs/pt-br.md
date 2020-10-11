@@ -1,24 +1,24 @@
 # use-timer
 
-> React Hook to easily create decremental timers
+> React Hook para criação de contadores descrescentes
 
 [![NPM](https://img.shields.io/npm/v/@fdaciuk/use-timer.svg)](https://www.npmjs.com/package/@fdaciuk/use-timer) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 :us: [English][en-docs]&nbsp;&nbsp;|&nbsp;&nbsp;:brazil: [Português do Brasil][pt-br-docs]
 
-## Install
+## Instalação
 
 ```bash
 npm install --save @fdaciuk/use-timer
 ```
 
-If you are using yarn:
+Caso use yarn:
 
 ```bash
 yarn add @fdaciuk/use-timer
 ```
 
-## Usage
+## Exemplo
 
 ```jsx
 import React, { useEffect } from 'react'
@@ -37,7 +37,7 @@ function Example () {
 }
 ```
 
-## Complete example
+## Exemplo completo
 
 ```jsx
 import React, { useCallback, useEffect } from 'react'
@@ -82,16 +82,16 @@ function Example () {
 }
 ```
 
-## Properties and methods
+## Propriedades e métodos
 
-- **`minutes`** (`String`): show left minutes in 2 or more digits
-- **`seconds`** (`String`): show left seconds in 2 or more digits
-- **`start`** (`Function`): function that should be executed when the timer is supposed to start counting
-- **`pause`** (`Function`): function to pause timer
-- **`finished`** (`Function`): function that receives another function that will be executed when timer finishes counting
-- **`reset`** (`Function`): function to reset counter to it's initial time, passed to `useTimer` hook
-- **`setTimer`** (`Function`): function to set a new timer
+- **`minutes`** (`String`): mostra os minutos restantes com precisão de 2 ou mais dígitos
+- **`seconds`** (`String`): mostra os minutos restantes com precisão de 2 ou mais dígitos
+- **`start`** (`Function`): função para iniciar o contador
+- **`pause`** (`Function`): função para pausar o contador
+- **`finished`** (`Function`): função que registra uma função para ser executada ao fim da contagem
+- **`reset`** (`Function`): função para colocar o contador em seu estado inicial, passado ao hook `useTimer`
+- **`setTimer`** (`Function`): função para registrar um novo valor para o contador
 
-## License
+## Licensa
 
 MIT © [fdaciuk](https://github.com/fdaciuk)
