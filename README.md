@@ -1,3 +1,5 @@
+![use-timer logo](react-timer.svg)
+
 # use-timer
 
 > React Hook to easily create decremental timers
