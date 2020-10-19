@@ -1,6 +1,6 @@
 # use-timer
 
-> React Hook para criação de contadores descrescentes
+> React Hook para criação de contadores decrescentes
 
 [![NPM](https://img.shields.io/npm/v/@fdaciuk/use-timer.svg)](https://www.npmjs.com/package/@fdaciuk/use-timer) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
