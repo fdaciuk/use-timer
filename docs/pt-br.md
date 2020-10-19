@@ -95,3 +95,6 @@ function Example () {
 ## Licensa
 
 MIT © [fdaciuk](https://github.com/fdaciuk)
+
+[en-docs]: /README.md
+[pt-br-docs]: /docs/pt-br.md
