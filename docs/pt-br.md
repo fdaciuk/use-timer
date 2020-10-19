@@ -85,7 +85,7 @@ function Example () {
 ## Propriedades e métodos
 
 - **`minutes`** (`String`): mostra os minutos restantes com precisão de 2 ou mais dígitos
-- **`seconds`** (`String`): mostra os minutos restantes com precisão de 2 ou mais dígitos
+- **`seconds`** (`String`): mostra os segundos restantes com precisão de 2 ou mais dígitos
 - **`start`** (`Function`): função para iniciar o contador
 - **`pause`** (`Function`): função para pausar o contador
 - **`finished`** (`Function`): função que registra uma função para ser executada ao fim da contagem
