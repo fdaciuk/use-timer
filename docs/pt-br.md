@@ -92,7 +92,7 @@ function Example () {
 - **`reset`** (`Function`): função para colocar o contador em seu estado inicial, passado ao hook `useTimer`
 - **`setTimer`** (`Function`): função para registrar um novo valor para o contador
 
-## Licensa
+## Licença
 
 MIT © [fdaciuk](https://github.com/fdaciuk)
 
