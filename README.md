@@ -1,4 +1,4 @@
-![use-timer logo](react-timer.svg)
+![use-timer logo](use-timer.svg)
 
 # use-timer
 
